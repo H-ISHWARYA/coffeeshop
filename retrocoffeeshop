@@ -255,9 +255,9 @@ public class Retrocoffeeshop
                     Readerprofit.close();
                     Connection connection = DriverManager.getConnection(url, username, pwd);
                     Statement statement = connection.createStatement();
-                    System.out.print("Enter DOB in  (YYYY-MM-DD)");
-                    String DOB = scan.nextLine();
-                    statement.executeUpdate("insert into profitdata values('" + DOB + "' , "  + i + ")");
+                    System.out.print("Enter Date in  (YYYY-MM-DD)");
+                    String Date = scan.nextLine();
+                    statement.executeUpdate("insert into profitdata values('" + Date + "' , "  + i + ")");
 
                     System.out.println("Successfully added");
                     connection.close();
@@ -278,3 +278,5 @@ public class Retrocoffeeshop
 
 
         }
+
+
